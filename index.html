@@ -3,43 +3,5 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
-
-<!-- Start: injected by Adguard -->
-<script type="text/javascript">(function () {
-    // Array of elements to be injected to this html page
-    var elements = eval("[ { tagName: 'script', attributes: [{ name: 'type', value: 'text/javascript' }, { name: 'charset', value: 'utf-8' }, { name: 'src', value: '//injections.adguard.com/adguard-ajax-api/injections/Adguard Popup Blocker?rand=635491328649028499' } ] } ]");
-
-    var scripts = document.getElementsByTagName('script');
-    var currentScript = scripts[scripts.length - 1];
-    var rootElement = currentScript.parentNode;
-
-    var injectElement = function (element) {
-        var el = document.createElement(element.tagName);
-        for (var j = 0; j < element.attributes.length; j++) {
-            var attribute = element.attributes[j];
-            el.setAttribute(attribute.name, attribute.value);
-        }
-        rootElement.insertBefore(el, currentScript);
-    };
-
-    var injectElements = function () {
-        for (var i = 0; i < elements.length; i++) {
-            injectElement(elements[i]);
-        }
-    };
-
-    var isIframe = (window.self != window.top);
-    var width = window.innerWidth || document.documentElement.clientWidth;
-    var height = window.innerHeight || document.documentElement.clientHeight;
-
-    if (isIframe && ((width * height) < 100000)) {
-        // Do not inject into small iframes
-        return;
-    }
-
-    injectElements();
-})();
-</script>
-<!-- End: injected by Adguard -->
 </body>
 </html>
